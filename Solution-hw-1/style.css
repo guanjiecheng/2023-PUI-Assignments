@@ -1,0 +1,42 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+#logo{
+    width:200px;
+    height: 100px;
+}
+
+header{
+    border: 4px;
+    border-style: none none solid none;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+#options >button{
+    margin-top: 10px;
+    font-size: 18px;
+    background: white;
+    border: none;
+}*/
+#options >a{
+    color: black;
+    text-decoration: none;
+}
+
+#options > a:focus{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+p{
+    font-size: 18px;
+    text-align:center;
+    margin-top: 100px;
+}
