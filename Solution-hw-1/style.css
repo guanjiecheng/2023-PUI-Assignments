@@ -18,22 +18,15 @@ header{
     align-items: center;
 }
 
-/*
-#options >button{
-    margin-top: 10px;
-    font-size: 18px;
-    background: white;
-    border: none;
-}*/
-#options >a{
+#options > a{
     color: black;
     text-decoration: none;
     margin-top: 10px;
 }
 
-#options > a:focus{
+#productTab{
     background-color: yellow;
-    font-weight: bold;
+    font-weight:bold;
 }
 
 #heading{
@@ -42,28 +35,59 @@ header{
     margin-top: 100px;
 }
 
-#products{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 50%;
+
+.original, 
+.apple,
+.raisin, 
+.walnut,
+.doubleChocolate, 
+.strawberry{
+    padding: 5px 10px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;    
 }
 
-.textLink{          
-    height: 1.5em;
+.original > a,
+.apple > a,
+.raisin > a,
+.walnut > a,
+.doubleChocolate > a,
+.strawberry > a{
+    margin-top: 0;
+    line-height: 5px;
 }
 
-#products >a > p{
-    margin: auto;
-    height: 14px;
-    padding: 0px;
-}
-
-#products > a>img{
-    display: block;
+.original > a> img,
+.apple > a > img,
+.raisin > a > img,
+.walnut > a > img,
+.doubleChocolate > a > img,
+.strawberry > a > img
+{
     width: 200px;
-    margin:auto;
+    margin: 0px auto 0px auto;
     height: 200px;
     border: 3px solid black;
 }
 
+.original:hover,
+.apple:hover,
+.raisin:hover,
+.walnut:hover,
+.doubleChocolate:hover,
+.strawberry:hover{
+    background: yellow;
+    cursor: pointer;
+}
+
+.productName{
+    color: black;
+}
+.productPrice{
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    height:10px; 
+}
