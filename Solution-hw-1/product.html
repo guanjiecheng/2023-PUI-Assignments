@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Product Detail</title>
         <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "productStyle.css">
     </head>
     <body>
         <header>
@@ -16,28 +17,38 @@
             <a href = "index.html" id = "productTab">PRODUCTS </a>
             <a href = "cart.html">CART</a>
         </div>
-    
-        <p>Original cinnamon roll</p>
-        <img src = "products/original-cinnamon-roll.jpeg" id = "productImage">
-        <p>Customize our delicious hand-made cinnamon roll to your liking!</p>
 
-        <label for = "glazing">Glazing:</label><br>
-        <select id = "glazing"> 
-            <option>Keep original</option>
-            <option>Sugar milk</option>
-            <option>Vanilla milk</option>
-            <option>Double chocolate</option>
-        </select>
-        <br>
+        <div id = "product">
+            <p id = "title">Original cinnamon roll</p>
+            <img src = "products/original-cinnamon-roll.jpeg" id = "productImage">
+        </div>
         
-        <label for = "size">Pack size:</label><br>
-        <select id = "size"> 
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-        <br>
+        <div id = "customize">
+            <p id = "customizeHead">Customize our delicious hand-made cinnamon roll to your liking!</p>
+            
+            <div id = "glazingDiv">
+                <label for = "glazing" id = "glazingLabel">Glazing:</label><br>
+                <select id = "glazing"> 
+                    <option>Keep original</option>
+                    <option>Sugar milk</option>
+                    <option>Vanilla milk</option>
+                    <option>Double chocolate</option>
+                </select>
+                <br>
+            </div>
+
+            <div id = "sizeDiv">
+                <label for = "size" id = "sizeLabel">Pack size:</label><br>
+                <select id = "size"> 
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <br>
+            </div>
+        </div>
+        
         <div id = "checkout">
             <p>$2.49</p>
             <button>Add to Cart</button>

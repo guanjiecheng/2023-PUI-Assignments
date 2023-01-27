@@ -1,0 +1,76 @@
+#title{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#product{
+    margin: 0px auto 0px auto;
+    width: 500px;
+}
+
+#productImage{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+#customize{
+    width: 200px;
+    margin: 0px auto 0px auto;
+}
+
+#customizeHead{
+    text-align: left;
+    font-size: 16px;
+}
+
+#glazingDiv{
+    margin-top: 50px;
+}
+
+#glazingLabel{
+    font-size: 16px;
+}
+
+#glazing, #size{
+    font-size: 16px;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#sizeDiv{
+    margin-top: 30px;
+}
+
+#sizeLabel{
+    font-size: 16px;
+}
+
+#checkout{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkout > p{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#checkout >button{
+    background: yellow;
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
