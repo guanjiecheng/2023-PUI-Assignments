@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping cart</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "cartStyle.css">
 </head>
     <body>
         <header>
@@ -13,31 +14,40 @@
         </header>
 
         <div id = "options">
-            <a href = "#">PRODUCTS </a>
-            <a href = "#">CART</a>
+            <a href = "index.html">PRODUCTS </a>
+            <a href = "cart.html" id = "cartTab">CART</a>
+        </div>
+        <p id = "title">Shopping Cart</p>
+
+        <div class = "product">
+            <img src = "products/original-cinnamon-roll.jpeg">
+            <a class = "remove">Remove</a>
         </div>
 
-        <p>Shopping Cart</p>
-        <div id = "product 1">
-            <img src = "products/original-cinnamon-roll.jpeg" id = "productImage1">
+        <div class = "productText">
             <p>Original Cinnamon Roll</p>
             <p>Glazing: Keep original</p>
             <p>Pack Size: 1</p>
-            <p>$2.49</p>
         </div>
+        <p class = "price">$2.49</p>
         
-        <div id = "product 2">
-            <img src = "products/double-chocolate-cinnamon-roll.jpeg" id = "productImage2">
+        <div class = "product">
+            <img src = "products/double-chocolate-cinnamon-roll.jpeg">
+            <a class = "remove">Remove</a>
+        </div>
+        <div class = "productText">
             <p>Double Chocolate Cinnamon Roll</p>
             <p>Glazing: Sugar milk</p>
             <p>Pack Size: 6</p>
-            <p>$27.45</p>
         </div>
+        <p class = "price">$27.45</p>
         <div id = "line">
         </div>
-        <p>Total: $29.94</p>
-        <button>
-            Checkout
-        </button>
+        <div id = "ckeckout">
+            <p id = "totalPrice">Total: $29.94</p>
+            <button>
+                Checkout
+            </button>
+        </div>
     </body>
 </html>
