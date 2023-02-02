@@ -1,14 +1,17 @@
+/*styles the selection for cart*/
 #cartTab{
     background-color: yellow;
     font-weight:bold;
 }
 
+/*stlyes title for page*/
 #title{
     margin-top: 30px;
     font-size: 24px;
     text-align: center;
 }
 
+/*styles information for original cinnamon roll*/
 .product{
     width: 100px;
     line-height: 5px;
@@ -17,11 +20,13 @@
     margin-top: 50px;
 }
 
+/*styles image for original cinnamon roll*/
 .product > img{
     width: 100px;
     border: 3px solid black;
 }
 
+/*stlyes remove option*/
 .remove{
     display: block;
     text-align:center;
@@ -32,6 +37,7 @@
     cursor: pointer;
 }
 
+/*styles div for product information and customization*/
 .productText{
     text-align: center;
     margin-top: 20px;
@@ -40,11 +46,12 @@
     font-size: 18px;
     
 }
-
+/*styles text for product information and customization*/
 .productText >p{
     margin: 0;
 }
 
+/*styles the text price of the products*/
 .price{
     text-align: center;
     font-size: 18px;
@@ -53,6 +60,7 @@
 }
 
 
+/*styling for bottom line*/
 #line{
     border: 4px;
     border-style: none none solid none;
@@ -61,6 +69,7 @@
     margin-right: auto;
 }
 
+/*styles div for checkout related information*/
 #checkout{
     display: flex;
     flex-direction: column;
@@ -68,11 +77,13 @@
     align-items: center;
 }
 
+/*styles text for total price*/
 #totalPrice{
     text-align: center;
     font-size: 24px;
 }
 
+/*styles checkout button*/
 #checkout > button{
     width: 150px;
     height: 50px;
