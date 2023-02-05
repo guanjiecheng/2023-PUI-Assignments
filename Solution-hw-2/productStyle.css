@@ -1,0 +1,88 @@
+/*styles the title for the page*/
+#title{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+/*styles the div that holds information about the product displayed*/
+#product{
+    margin: 0px auto 0px auto;
+    width: 500px;
+}
+
+/*styles the image for the product displayed*/
+#productImage{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+/*styles the div that holds the customization options*/
+#customize{
+    width: 200px;
+    margin: 0px auto 0px auto;
+}
+
+/*styles the text at the top of the customization options*/
+#customizeHead{
+    text-align: left;
+    font-size: 16px;
+}
+
+/*styles the div for glazing*/
+#glazingDiv{
+    margin-top: 50px;
+}
+
+/*styles the label for the glazing drop down*/
+#glazingLabel{
+    font-size: 16px;
+}
+
+/*styles the dropdowns*/
+#glazing, #size{
+    font-size: 16px;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*styles the div for size*/
+#sizeDiv{
+    margin-top: 30px;
+}
+/*styles the label for size drop down*/
+#sizeLabel{
+    font-size: 16px;
+}
+
+/*styles the div for the checkout*/
+#checkout{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*styles the price text for the checkout*/
+#checkout > p{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*styles the checkout button*/
+#checkout >button{
+    background: yellow;
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
