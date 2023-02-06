@@ -9,56 +9,60 @@
         <link rel = "stylesheet" href = "productStyle.css"> <!--links to style sheet for this page specifically-->
     </head>
     <body>
-        <!--logo for the site-->
-        <header>
-            <img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo">
-        </header>
-
-        <!--options for seeing all products or cart-->
-        <div id = "options">
-            <a href = "index.html" id = "productTab">PRODUCTS </a>
-            <a href = "cart.html" id = "cartTab">CART</a>
+         <!--logo for the site-->
+         <div id = "heading">
+            <a href = "index.html"><img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo"></a>
+            <div id = "headingItems">
+                <header>
+                    <div id = "options">
+                        <a href = "index.html" id = "productTab">PRODUCTS </a>
+                        <a href = "cart.html">CART</a>
+                    </div>
+                </header>
+                <p id = "headingText">Original cinnamon roll</p>
+            </div>
         </div>
-
-        <!--has the product title and product image-->
-        <div id = "product">
-            <p id = "title">Original cinnamon roll</p>
-            <img src = "products/original-cinnamon-roll.jpeg" id = "productImage" alt = "original cinnamon roll">
-        </div>
-        
-
-        <!-- has options to customize the cinnamon roll-->
-        <div id = "customize">
-            <p id = "customizeHead">Customize our delicious hand-made cinnamon roll to your liking!</p>
+        <div class = "content">  
+            <div id = "product">
+                <img src = "products/original-cinnamon-roll.jpeg" id = "productImage" alt = "original cinnamon roll">
+            </div>
             
-            <!--dropdown menu to select customization for glazing-->
-            <div id = "glazingDiv">
-                <label for = "glazing" id = "glazingLabel">Glazing:</label><br>
-                <select id = "glazing"> 
-                    <option>Keep original</option>
-                    <option>Sugar milk</option>
-                    <option>Vanilla milk</option>
-                    <option>Double chocolate</option>
-                </select>
-                <br>
+    
+            <!-- has options to customize the cinnamon roll-->
+            <div id = "customize">
+                <p id = "customizeHead">Customize our delicious hand-made cinnamon roll to your liking!</p>
+                
+                <!--dropdown menu to select customization for glazing-->
+                <div id = "glazingDiv">
+                    <label for = "glazing" id = "glazingLabel">Glazing:</label><br>
+                    <select id = "glazing"> 
+                        <option>Keep original</option>
+                        <option>Sugar milk</option>
+                        <option>Vanilla milk</option>
+                        <option>Double chocolate</option>
+                    </select>
+                    <br>
+                </div>
+    
+                <!--dropdown menu to select pack size-->
+                <div id = "sizeDiv">
+                    <label for = "size" id = "sizeLabel">Pack size:</label><br>
+                    <select id = "size"> 
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <br>
+                </div>
+                <div id = "checkout">
+                    <p>$2.49</p>
+                    <button>Add to Cart</button>
+                </div>
             </div>
-
-            <!--dropdown menu to select pack size-->
-            <div id = "sizeDiv">
-                <label for = "size" id = "sizeLabel">Pack size:</label><br>
-                <select id = "size"> 
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-                <br>
-            </div>
+            <!--price for a roll and option to add to cart-->
         </div>
-        <!--price for a roll and option to add to cart-->
-        <div id = "checkout">
-            <p>$2.49</p>
-            <button>Add to Cart</button>
-        </div>
+        <!--has the product title and product image-->
+        
     </body>
 </html>

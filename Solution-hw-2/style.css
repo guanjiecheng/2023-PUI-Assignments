@@ -44,7 +44,8 @@ header{
     flex-direction: row;
     width: 300px;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-right: 50px;
 }
 
 

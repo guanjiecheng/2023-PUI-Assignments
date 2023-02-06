@@ -11,6 +11,18 @@
     text-align: center;
 }
 
+.allProducts{
+    margin-left: auto;
+    width: 760px;
+}
+
+.productWrapper{
+    display:flex;
+    align-items: center;
+    width: 600px;
+}
+
+
 /*styles information for original cinnamon roll*/
 .product{
     width: 100px;
@@ -18,6 +30,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    flex: 0 0 auto;
 }
 
 /*styles image for original cinnamon roll*/
@@ -29,7 +42,6 @@
 /*stlyes remove option*/
 .remove{
     display: block;
-    text-align:center;
     margin-top: 5px;
     font-size: 10px;
     font-weight: bold;
@@ -39,8 +51,7 @@
 
 /*styles div for product information and customization*/
 .productText{
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0;
     line-height: 20px;
     font-size: 18px;
@@ -48,15 +59,16 @@
 }
 /*styles text for product information and customization*/
 .productText >p{
-    margin: 0;
+    margin: 0 0 0 30px;
+    flex: 0 0 auto;
 }
 
 /*styles the text price of the products*/
 .price{
-    text-align: center;
+    flex: 1 0 auto;
+    text-align: end;
     font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 
@@ -64,7 +76,6 @@
 #line{
     border: 4px;
     border-style: none none solid none;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,16 +89,34 @@
 }
 
 /*styles text for total price*/
-#totalPrice{
-    text-align: center;
-    font-size: 24px;
+.totalPrice{
+    font-size: 20px;
 }
 
 /*styles checkout button*/
-#checkout > button{
+#test > button{
+    margin-top: 30px;
     width: 150px;
     height: 50px;
     font-size: 18px;
     background: yellow;
     border: 3px solid black;
+    margin-left: auto;
+}
+
+#checkoutItems{
+    margin-left: auto;
+    display:flex;
+    width: 760px;
+    justify-content: space-around;
+}
+
+#test{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#test > p{
+    text-align: center;
 }
