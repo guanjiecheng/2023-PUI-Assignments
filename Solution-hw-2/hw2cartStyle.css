@@ -104,6 +104,10 @@
     margin-left: auto;
 }
 
+#test > button:hover{
+    cursor: pointer;
+}
+
 #checkoutItems{
     margin-left: auto;
     display:flex;
