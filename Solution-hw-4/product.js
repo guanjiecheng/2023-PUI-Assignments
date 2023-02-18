@@ -55,22 +55,3 @@ for(let i = 0; i <packSize.length; i++){
     sizeSelect.add(option)
 }
 
-
-//gets the p tag that displays the price
-let price = document.querySelector('#totalPrice')
-price.innerHTML = '$' + 2.49
-
-
-//on change function that changes the displayed total price based on selected glazing value
-function glazingChange(element){
-    const priceChange = element.value
-    const size = document.querySelector('#size').value
-    price.innerHTML = '$' + ((2.49 + allGlazes[priceChange].price) * packSize[size].multiplier).toFixed(2)
-}
-
-//on change function that changes the displayed total price based on selected size value
-function sizeChange(element){
-    const sizeChange = element.value
-    const glazing = document.querySelector('#glazing').value
-    price.innerHTML = '$' + ((2.49 + allGlazes[glazing].price) * packSize[sizeChange].multiplier).toFixed(2)
-}

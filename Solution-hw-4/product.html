@@ -8,6 +8,7 @@
         <link rel = "stylesheet" href = "hw4-css/style.css"> <!--links to style sheet with styling for headers-->
         <link rel = "stylesheet" href = "hw4-css/hw4productStyle.css"> <!--links to style sheet for this page specifically-->
         <script defer src = "product.js"></script>
+        <script defer src = "rollsData.js"></script>
     </head>
     <body>
          <!--logo for the site-->
@@ -20,12 +21,12 @@
                         <a href = "cart.html">CART</a>
                     </div>
                 </header>
-                <p id = "headingText">Original cinnamon roll</p>
+                <p id = "headingText"></p>
             </div>
         </div>
         <div class = "content">  
             <div id = "product">
-                <img src = "products/original-cinnamon-roll.jpeg" id = "productImage" alt = "original cinnamon roll">
+                <img id = "productImage" alt = "original cinnamon roll">
             </div>
             
     
@@ -49,7 +50,7 @@
                 <div id = "checkout">
                     <!--price for a roll and option to add to cart-->
                     <p id = "totalPrice"></p>
-                    <button>Add to Cart</button>
+                    <button onclick = "addToCart()">Add to Cart</button>
                 </div>
             </div>
         </div>        
