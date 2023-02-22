@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel = "stylesheet" href = "hw4-css/style.css"> <!--links to style sheet with styling for headers-->
+    <link rel = "stylesheet" href = "hw4-css/hw4cartStyle.css"> <!--links to style sheet for this page specifically-->
+</head>
+    <body>
+        <!--logo for the site-->
+        <div id = "heading">
+            <a href = "index.html"><img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo"></a>
+            <div id = "headingItems">
+                <header>
+                    <div id = "options">
+                        <a href = "index.html" id = "productTab">PRODUCTS </a>
+                        <a href = "cart.html">CART</a>
+                    </div>
+                </header>
+                <p id = "headingText">Shopping Cart</p>
+            </div>
+        </div>
+
+        <div class = "allProducts">
+            <div class = "productWrapper">
+                <!-- shows product image for original cinnamon roll and option to remove-->
+                <div class = "product">
+                    <img src = "products/original-cinnamon-roll.jpeg" alt = "original cinnamon roll">
+                    <a class = "remove">Remove</a>
+                </div>
+                <!--shows product name and customization details for original cinnamon roll-->
+                <div class = "productText">
+                    <p>Original Cinnamon Roll</p>
+                    <p>Glazing: Keep original</p>
+                    <p>Pack Size: 1</p>
+                </div>
+                <!--price for product-->
+                <p class = "price">$2.49</p>
+            </div>
+            <div class = "productWrapper">
+                <!--shows product image for double chocolate cinnamon roll and option to remove-->
+                <div class = "product">
+                <img src = "products/double-chocolate-cinnamon-roll.jpeg" alt = "double chocolate cinnamon roll">
+                <a class = "remove">Remove</a>
+                </div>
+                <!--shows product name and customization details for double chocolate cinnamon roll-->
+                <div class = "productText">
+                    <p>Double Chocolate Cinnamon Roll</p>
+                    <p>Glazing: Sugar milk</p>
+                    <p>Pack Size: 6</p>
+                </div>
+
+                <!--price for products-->
+                <p class = "price">$27.45</p>
+
+                <!--div to create the line above the checkout-->
+            </div>
+            <br>
+            <div id = "line"></div>
+        </div>
+        
+        <!--displays total price and button to checkout-->
+        <div id = "checkout">
+            <div id = "checkoutItems"> 
+                <p class = "totalPrice">Total:</p>
+                <div id = "test">
+                    <p class = "totalPrice">$29.94</p>
+                    <button>
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
