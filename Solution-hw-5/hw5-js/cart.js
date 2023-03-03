@@ -121,7 +121,7 @@ function deleteProduct(roll){
 
 //updates the price displayed
 function updateCartTotal(){
-    const cartTotal = document.querySelector('.totalPrice')
+    const cartTotal = document.querySelector('#cartPrice')
     cartTotal.innerHTML = "$" +cartPrice 
 }
 
