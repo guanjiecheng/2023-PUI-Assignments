@@ -1,0 +1,126 @@
+/*styles the selection for cart*/
+#cartTab{
+    background-color: yellow;
+    font-weight:bold;
+}
+
+/*stlyes title for page*/
+#title{
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#allProducts{
+    margin-left: auto;
+    width: 760px;
+}
+
+.productWrapper{
+    display:flex;
+    align-items: center;
+    width: 600px;
+}
+
+
+/*styles information for original cinnamon roll*/
+.product{
+    width: 100px;
+    line-height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    flex: 0 0 auto;
+}
+
+/*styles image for original cinnamon roll*/
+.product > img{
+    width: 100px;
+    border: 3px solid black;
+}
+
+/*stlyes remove option*/
+.removeText{
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*styles div for product information and customization*/
+.productText{
+    margin-top: 30px;
+    padding: 0;
+    line-height: 20px;
+    font-size: 18px;
+    
+}
+/*styles text for product information and customization*/
+.productText >p{
+    margin: 0 0 0 30px;
+    flex: 0 0 auto;
+}
+
+/*styles the text price of the products*/
+.productPrice{
+    flex: 1 0 auto;
+    text-align: end;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
+/*styling for bottom line*/
+#line{
+    border: 4px;
+    border-style: none none solid none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styles div for checkout related information*/
+#checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*styles text for total price*/
+.totalPrice{
+    font-size: 20px;
+}
+
+/*styles checkout button*/
+#test > button{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background: yellow;
+    border: 3px solid black;
+    margin-left: auto;
+}
+
+#test > button:hover{
+    cursor: pointer;
+}
+
+#checkoutItems{
+    margin-left: auto;
+    display:flex;
+    width: 760px;
+    justify-content: space-around;
+}
+
+#test{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#test > p{
+    text-align: center;
+}

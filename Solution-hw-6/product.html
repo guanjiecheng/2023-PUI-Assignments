@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Detail</title>
+        <link rel = "stylesheet" href = "hw6-css/style.css"> <!--links to style sheet with styling for headers-->
+        <link rel = "stylesheet" href = "hw6-css/hw6productStyle.css"> <!--links to style sheet for this page specifically-->
+        <script defer src = "hw5-js/product.js"></script>
+        <script defer src = "hw5-js/rollsData.js"></script>
+    </head>
+    <body>
+         <!--logo for the site-->
+         <div id = "heading">
+            <a href = "index.html"><img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo"></a>
+            <div id = "headingItems">
+                <header>
+                    <div id = "options">
+                        <a href = "index.html" id = "productTab">PRODUCTS </a>
+                        <a href = "cart.html">CART</a>
+                    </div>
+                </header>
+                <p id = "headingText"></p>
+            </div>
+        </div>
+        <div class = "content">  
+            <div id = "product">
+                <img id = "productImage" alt = "original cinnamon roll">
+            </div>
+            
+    
+            <!-- has options to customize the cinnamon roll-->
+            <div id = "customize">
+                <p id = "customizeHead">Customize our delicious hand-made cinnamon roll to your liking!</p>
+                
+                <!--dropdown menu to select customization for glazing-->
+                <div id = "glazingDiv">
+                    <label for = "glazing" id = "glazingLabel">Glazing:</label><br>
+                    <select id = "glazing" onchange = "glazingChange(this)"></select>
+                    <br>
+                </div>
+    
+                <!--dropdown menu to select pack size-->
+                <div id = "sizeDiv">
+                    <label for = "size" id = "sizeLabel">Pack size:</label><br>
+                    <select id = "size" onchange = "sizeChange(this)"></select>
+                    <br>
+                </div>
+                <div id = "checkout">
+                    <!--price for a roll and option to add to cart-->
+                    <p id = "totalPrice"></p>
+                    <button onclick = "addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

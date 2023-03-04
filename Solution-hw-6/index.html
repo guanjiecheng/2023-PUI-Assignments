@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 6 Solution</title>
+        <link rel = "stylesheet" href = "hw6-css/style.css"> <!--links to overall styling sheet-->
+    </head>
+    <body>
+        <!--logo for the site-->
+        <div id = "heading">
+            <a href = "index.html"><img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo"></a>
+            <div id = "headingItems">
+                <header>
+                    <div id = "options">
+                        <a href = "index.html" id = "productTab">PRODUCTS </a>
+                        <a href = "cart.html">CART</a>
+                    </div>
+                </header>
+                <p id = "headingText">Our hand-made cinnamon rolls</p>
+            </div>
+        </div>
+
+        <!--includes all products-->
+        <div id = "products">
+            <div class = "col">
+                <!--includes details for original cinnamon roll-->
+                <div class = "original">
+                    <a href = "./product.html?roll=Original" onclick = "test()"><img src = "products/original-cinnamon-roll.jpeg" alt = "original cinnamon roll"></a>
+                    <a href = "./product.html?roll=Original" class = "productName"><p>Original cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Original" class = "productPrice"><p>$2.49</p></a>
+                    <br>
+                </div>
+    
+                <!--includes details for walnut cinnamon roll-->
+                <div class = "walnut">
+                    <a href = "./product.html?roll=Walnut"> <img src = "products/walnut-cinnamon-roll.jpeg" alt = "walnut cinnamon roll"></a>
+                    <a href = "./product.html?roll=Walnut" class = "productName"><p>Walnut cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Walnut" class = "productPrice"><p>$3.49</p></a>
+                    <br>
+                </div>
+            </div>
+
+            <div class = "col">
+                <!--includes details for apple cinnamon roll-->
+                <div class = "apple">
+                    <a href = "./product.html?roll=Apple"> <img src = "products/apple-cinnamon-roll.jpeg" alt = "apple cinnamon roll"></a>
+                    <a href = "./product.html?roll=Apple" class = "productName"><p>Apple cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Apple" class = "productPrice"><p>$3.49</p></a>
+                    <br>
+                </div>    
+        
+                <!--includes details for double chocolate cinnamon roll-->
+                <div class = "doubleChocolate">
+                    <a href = "./product.html?roll=Double-Chocolate"> <img src = "products/double-chocolate-cinnamon-roll.jpeg" alt = "double chocolate cinnamon roll"></a>
+                    <a href = "./product.html?roll=Double-Chocolate" class = "productName"><p>Double-chocolate cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Double-Chocolate" class = "productPrice"><p>$3.99</p></a>
+                    <br>
+                </div>
+            </div>
+            <div class = "col">
+                <!--includes details for raisin cinnamon roll-->
+                <div class = "raisin">
+                    <a href = "./product.html?roll=Raisin"> <img src = "products/raisin-cinnamon-roll.jpeg" alt = "raisin cinnamon roll"></a>
+                    <a href = "./product.html?roll=Raisin" class = "productName"><p>Raisin cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Raisin" class = "productPrice"><p>$2.99</p></a>
+                    <br>
+                </div>
+                
+                <!--includes details for strawberry cinnamon roll-->
+                <div class = "strawberry">
+                    <a href = "./product.html?roll=Strawberry"> <img src = "products/strawberry-cinnamon-roll.jpeg" alt = "strawberry cinnamon roll"></a>
+                    <a href = "./product.html?roll=Strawberry" class = "productName"><p>Strawberry cinnamon roll</p></a>
+                    <a href = "./product.html?roll=Strawberry" class = "productPrice"><p>$3.99</p></a>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

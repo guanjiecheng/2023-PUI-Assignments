@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel = "stylesheet" href = "hw6-css/style.css"> <!--links to style sheet with styling for headers-->
+    <link rel = "stylesheet" href = "hw6-css/hw6cartStyle.css"> <!--links to style sheet for this page specifically-->
+    <script defer src = "hw6-js/cart.js"></script>
+</head>
+    <body>
+        <!--logo for the site-->
+        <div id = "heading">
+            <a href = "index.html"><img src = "logo/logo-01.svg" id = "logo" alt = "BunBun Logo"></a>
+            <div id = "headingItems">
+                <header>
+                    <div id = "options">
+                        <a href = "index.html" id = "productTab">PRODUCTS </a>
+                        <a href = "cart.html">CART</a>
+                    </div>
+                </header>
+                <p id = "headingText">Shopping Cart</p>
+            </div>
+        </div>
+
+        <div id = "allProducts">
+            <template id = "productTemplate">
+                <div class = "productWrapper">
+                    <!-- shows product image for original cinnamon roll and option to remove-->
+                    <div class = "product">
+                        <img class = "productImage">
+                        <div class = "remove">
+                            <p class = "removeText">Remove</p>
+                        </div>
+                    </div>
+                    <!--shows product name and customization details for original cinnamon roll-->
+                    <div class = "productText">
+                        <p class = "productName"></p>
+                        <p class = "productGlaze"></p>
+                        <p class = "productSize"></p>
+                    </div>
+                    <!--price for product-->
+                    <p class = "productPrice"></p>
+                </div>
+            </template>
+            <br>
+
+            <!--div to create the line above the checkout-->
+            <div id = "line"></div>
+        </div>
+        
+        <!--displays total price and button to checkout-->
+        <div id = "checkout">
+            <div id = "checkoutItems"> 
+                <p class = "totalPrice">Total:</p>
+                <div id = "test">
+                    <p id = "cartPrice" class = "totalPrice"></p>
+                    <button>
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
