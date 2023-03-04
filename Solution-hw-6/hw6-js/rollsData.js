@@ -25,8 +25,36 @@ const rolls = {
     }    
 };
 
+//class Roll for keeping info in cart
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+
 //cart
-var cart = []
+function cartExists(){
+    const savedCart = localStorage.getItem('storedCart')
+    if(savedCart == null){
+        return []
+    }
+    else{
+        const cartArray = JSON.parse(savedCart);
+        let cart = []
+        for(const elem of cartArray){
+            let item = new Roll(elem.type, elem.glazing, elem.size, elem.basePrice)
+            cart.push(item)
+        }
+        return cart
+    }
+}
+
+
+var cart = cartExists()
 
 //gets the params from the URL
 const queryString = window.location.search;
@@ -60,16 +88,6 @@ function sizeChange(element){
     price.innerHTML = '$' + ((rolls[rollType].basePrice + allGlazes[glazing].price) * packSize[sizeChange].multiplier).toFixed(2)
 }
 
-//class Roll for keeping info in cart
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
 //adds to cart
 function addToCart(){
     const glazing = document.querySelector('#glazing')
@@ -83,7 +101,12 @@ function addToCart(){
     const saved = new Roll(rollType, glazingText, sizeText, basePrice)
     
     cart.push(saved)
-    console.log(cart)
+    saveToLocalStorage()
+    console.log(localStorage.getItem('storedCart'))
 }
 
 
+function saveToLocalStorage(){
+    const cartArrayString = JSON.stringify(cart)
+    localStorage.setItem('storedCart',cartArrayString)
+}

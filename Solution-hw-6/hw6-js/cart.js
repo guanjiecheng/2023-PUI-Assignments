@@ -41,6 +41,7 @@ const packSize = {
     '6':5,
     '12':10
 }
+
 //creates class for roll
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
@@ -51,20 +52,25 @@ class Roll {
     }
 }
 
+
+function cartExists(){
+    var cart = new Set()
+    const savedCart = localStorage.getItem('storedCart')
+    if( savedCart == null){
+        return cart
+    }
+    else{
+        const cartArray = JSON.parse(savedCart);
+        for(const elem of cartArray){
+            let item = new Roll(elem.type, elem.glazing, elem.size, elem.basePrice)
+            cart.add(item)
+        }
+        return cart
+    }
+}
+
 //creates a cart
-var cart = new Set()
-
-//creates different role types
-const original = new Roll("Original", "Sugar Milk", "1", 2.49)
-const walnut = new Roll("Walnut", "Vanilla Milk", "12", 3.49)
-const raisin = new Roll("Raisin", "Sugar Milk", "3", 3.99)
-const apple = new Roll("Apple", "Keep Original", "3", 3.49)
-
-//initializing cart
-cart.add(original)
-cart.add(walnut)
-cart.add(raisin)
-cart.add(apple)
+var cart = cartExists()
 
 //variable to hold cart price
 var cartPrice = 0;
@@ -116,6 +122,7 @@ function deleteProduct(roll){
         roll.element.remove();
         cart.delete(roll)
         updateCartTotal()
+        saveToLocalStorage()
     }
 }
 
@@ -125,9 +132,21 @@ function updateCartTotal(){
     cartTotal.innerHTML = "$" +cartPrice 
 }
 
+
+function saveToLocalStorage(){
+    const cartArray = Array.from(cart)
+    const cartArrayString = JSON.stringify(cartArray)
+    localStorage.setItem('storedCart',cartArrayString)
+    console.log(localStorage.getItem('storedCart'))
+}
+
+
+
 //for each element in the cart add to page
 for(const roll of cart){
     createElement(roll)
 }
+
+
 
 

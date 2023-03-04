@@ -1,19 +1,19 @@
 //Hard codes values for glazing
 let allGlazes = [
     {
-        choice: 'Keep original',
+        choice: 'Keep Original',
         price: 0
     },
     {
-        choice: 'Sugar milk',
+        choice: 'Sugar Milk',
         price: 0
     },
     {
-        choice: 'Vanilla milk',
+        choice: 'Vanilla Milk',
         price: 0.5
     },
     {
-        choice: 'Double chocolate',
+        choice: 'Double Chocolate',
         price: 1.5
     }
 ]
